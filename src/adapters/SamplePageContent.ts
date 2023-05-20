@@ -5,42 +5,42 @@ import {
     LinkField,
 } from './types';
 /**
- * From MainPage_MetaData
+ * From SamplePage_MetaData
  */
-export type MainPage_MetaData_BasicSeoDataBlock = {
+export type SamplePage_MetaData_BasicSeoDataBlock = {
     __accessLevel?: number;
     metaDataFields: { description: string; robots: string };
 };
 /**
  * From Document Areas
  */
-export type MainPage_MetaData = Array<{
-    basicSeoDataBlock?: MainPage_MetaData_BasicSeoDataBlock;
+export type SamplePage_MetaData = Array<{
+    basicSeoDataBlock?: SamplePage_MetaData_BasicSeoDataBlock;
 }>;
 /**
- * From MainPage_Body
+ * From SamplePage_Body
  */
-export type MainPage_Body_MainPageHeroBlock = {
+export type SamplePage_Body_MainPageHeroBlock = {
     __accessLevel?: number;
     heroTitle: { text: string };
 };
 /**
  * From Document Areas
  */
-export type MainPage_Body = Array<{
-    mainPageHeroBlock?: MainPage_Body_MainPageHeroBlock;
+export type SamplePage_Body = Array<{
+    mainPageHeroBlock?: SamplePage_Body_MainPageHeroBlock;
 }>;
 /**
  * Document Areas
  */
-export type MainPage_DocumentAreas = {
-    metaData: MainPage_MetaData;
-    body: MainPage_Body;
+export type SamplePage_DocumentAreas = {
+    metaData: SamplePage_MetaData;
+    body: SamplePage_Body;
 };
 /**
  * Document Content
  */
-export type MainPageContent = {
+export type SamplePageContent = {
     title: string;
     slug: string;
     dateUpdated?: number;
@@ -49,5 +49,5 @@ export type MainPageContent = {
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    documentAreas: MainPage_DocumentAreas;
+    documentAreas: SamplePage_DocumentAreas;
 };
