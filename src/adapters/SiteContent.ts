@@ -1,10 +1,28 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
 /**
- * Data Fields
+ * From Site_MetaData
  */
-export type Site_DataFields = {
-    siteTitle?: { value: string; type: DataFieldType };
-    siteLogo?: { value: string; type: DataFieldType };
+export type Site_MetaData_SiteLogoBlock = {
+    __accessLevel?: number;
+    logoImage: { image: ImageField };
+    logoTitle: { text: string };
+};
+/**
+ * From Document Areas
+ */
+export type Site_MetaData = Array<{
+    siteLogoBlock?: Site_MetaData_SiteLogoBlock;
+}>;
+/**
+ * Document Areas
+ */
+export type Site_DocumentAreas = {
+    metaData: Site_MetaData;
 };
 /**
  * Document Content
@@ -13,7 +31,5 @@ export type SiteContent = {
     hasRestrictedAreas?: boolean;
     baseUrl: string;
     availableLocales: Array<string>;
-    tagsLinks: Record<string, string>;
-    authorProfiles: Record<string, DocumentContentContext>;
-    dataFields: Site_DataFields;
+    documentAreas: Site_DocumentAreas;
 };

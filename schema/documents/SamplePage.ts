@@ -1,13 +1,13 @@
 import {DocumentConfig} from '@sitebud/sdk-lib';
 import {mainPageHeroBlock, basicSeoDataBlock} from '../blocks';
 
-export const MainPage: DocumentConfig = {
-    type: 'main_page',
-    label: 'Main Page',
-    defaultTitle: 'Home',
-    defaultSlug: 'home',
-    description: 'The main page, often called the "homepage," is the entry point and central hub of a website. It provides an overview of the site\'s purpose, features key content and sections, and offers intuitive navigation.',
-    imageName: '',
+export const SamplePage: DocumentConfig = {
+    type: 'page',
+    label: 'Sample Page',
+    defaultTitle: 'Sample',
+    defaultSlug: 'sample',
+    description: 'A sample page',
+    imageName: 'sample_page.webp',
     documentAreas: {
         metaData: {
             indexNumber: 0,
