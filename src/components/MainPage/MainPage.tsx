@@ -13,8 +13,8 @@ export function MainPage() {
                         const {mainPageHeroBlock} = bodyBlockContext;
                         if (mainPageHeroBlock) {
                             return (
-                                <section key={`mainPageHeroBlock_${idx}`} className="w-full prose">
-                                    <div dangerouslySetInnerHTML={{__html: mainPageHeroBlock.heroTitle.text}} />
+                                <section key={`mainPageHeroBlock_${idx}`} className="py-32">
+                                    <div className="w-full custom-prose" dangerouslySetInnerHTML={{__html: mainPageHeroBlock.heroTitle.text}} />
                                 </section>
                             );
                         }

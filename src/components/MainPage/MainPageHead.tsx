@@ -22,7 +22,7 @@ export function MainPageHead() {
         for (const metaDataBlockContext of siteContent.documentAreas.metaData) {
             if (metaDataBlockContext.siteLogoBlock) {
                 const {logoImage, logoTitle} = metaDataBlockContext.siteLogoBlock;
-                pageTitle = `${pageTitle} | ${logoTitle}`;
+                pageTitle = `${pageTitle} | ${logoTitle.text}`;
                 if (logoImage.image.src) {
                     twitterImageUrl = `${baseUrl}/${logoImage.image.src}`;
                 }
