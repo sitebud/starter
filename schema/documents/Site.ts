@@ -1,5 +1,5 @@
 import {DocumentConfig} from '@sitebud/sdk-lib';
-import {siteLogoBlock} from '../blocks';
+import {siteLogoBlock, navigationMenuBlock} from '../blocks';
 
 export const Site: DocumentConfig = {
     type: 'site',
@@ -10,7 +10,8 @@ export const Site: DocumentConfig = {
             indexNumber: 0,
             label: 'Main Navigation',
             blocks: {
-                siteLogoBlock
+                siteLogoBlock,
+                navigationMenuBlock
             }
         }
     }

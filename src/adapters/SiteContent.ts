@@ -13,10 +13,18 @@ export type Site_MainNavigation_SiteLogoBlock = {
     logoTitle: { text: string };
 };
 /**
+ * From Site_MainNavigation
+ */
+export type Site_MainNavigation_NavigationMenuBlock = {
+    __accessLevel?: number;
+    navigationMenu: { documentsList: DocumentsListField };
+};
+/**
  * From Document Areas
  */
 export type Site_MainNavigation = Array<{
     siteLogoBlock?: Site_MainNavigation_SiteLogoBlock;
+    navigationMenuBlock?: Site_MainNavigation_NavigationMenuBlock;
 }>;
 /**
  * Document Areas
