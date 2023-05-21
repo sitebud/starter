@@ -1,8 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 import {useAdaptedContent} from '@/adapters';
 import {MainPageHead} from '@/components/MainPage/MainPageHead';
 import {MainNavigationArea} from '@/components/Site/MainNavigationArea';
-import Link from 'next/link';
+import KeyIcon from '@/icons/key.svg';
+import {ReactComponent as TrashIcon} from '@/icons/trash.svg';
+import {IconEntry} from '@/icons/IconEntry';
 
 function ComponentPropSection(props: { label: string, children: React.ReactNode }) {
     return (
@@ -15,6 +18,7 @@ function ComponentPropSection(props: { label: string, children: React.ReactNode 
 
 export function SamplePage() {
     const {samplePageContent} = useAdaptedContent();
+    console.log('[KeyIcon]: ', KeyIcon);
     if (samplePageContent) {
         return (
             <>
@@ -70,9 +74,7 @@ export function SamplePage() {
                                             </div>
                                         </ComponentPropSection>
                                         <ComponentPropSection label="Icon">
-                                            <div>
-                                                {sampleComponent.icon}
-                                            </div>
+                                            <IconEntry iconKey={sampleComponent.icon} className="h-12" />
                                         </ComponentPropSection>
                                         <ComponentPropSection label="String Value">
                                             <code className="p-3">

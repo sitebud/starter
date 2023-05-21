@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@sitebud/sdk-lib": "link:../sitebud-libs/packages/sdk-lib",
+    "@svgr/webpack": "8.0.1",
     "del-cli": "5.0.0",
     "nanoid": "3.3.6",
     "ts-node": "10.9.1"
