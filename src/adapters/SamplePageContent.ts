@@ -18,17 +18,9 @@ export type SamplePage_MetaData = Array<{
     basicSeoDataBlock?: SamplePage_MetaData_BasicSeoDataBlock;
 }>;
 /**
- * From SamplePage_Body
- */
-export type SamplePage_Body_SampleBlock = {
-    __accessLevel?: number;
-};
-/**
  * From Document Areas
  */
-export type SamplePage_Body = Array<{
-    sampleBlock?: SamplePage_Body_SampleBlock;
-}>;
+export type SamplePage_Body = Array<{}>;
 /**
  * Document Areas
  */

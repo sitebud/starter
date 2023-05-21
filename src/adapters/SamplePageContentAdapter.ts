@@ -27,9 +27,7 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
                     ],
                 },
             },
-            body: {
-                sampleBlock: {},
-            },
+            body: {},
         }) as SamplePage_DocumentAreas;
         return result;
     }

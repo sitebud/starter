@@ -182,13 +182,7 @@
       "body": {
         "indexNumber": 1,
         "label": "Body",
-        "blocks": {
-          "sampleBlock": {
-            "label": "Sample Block With Single Component",
-            "description": "This block consists of a single component, encompassing all available properties in the CMS.",
-            "components": {}
-          }
-        }
+        "blocks": {}
       }
     }
   },
