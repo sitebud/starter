@@ -18,6 +18,17 @@ export const mainPageHeroBlock: BlockConfig = {
                     }
                 }
             }
+        },
+        heroImage: {
+            indexNumber: 2,
+            label: 'Hero Image',
+            props: {
+                image: {
+                    indexNumber: 0,
+                    type: 'Image',
+                    fieldContent: {}
+                }
+            }
         }
     }
 };

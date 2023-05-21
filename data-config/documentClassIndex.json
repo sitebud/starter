@@ -92,6 +92,17 @@
                     }
                   }
                 }
+              },
+              "heroImage": {
+                "indexNumber": 2,
+                "label": "Hero Image",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
               }
             }
           }
@@ -190,6 +201,17 @@
                     "fieldContent": {
                       "htmlText": "<h1>Welcome to the starter template for SiteBud CMS</h1>"
                     }
+                  }
+                }
+              },
+              "heroImage": {
+                "indexNumber": 2,
+                "label": "Hero Image",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
                   }
                 }
               }

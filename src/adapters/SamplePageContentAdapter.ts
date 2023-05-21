@@ -30,6 +30,7 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
             body: {
                 mainPageHeroBlock: {
                     heroTitle: [{ name: 'text', type: 'HeaderText' }],
+                    heroImage: [{ name: 'image', type: 'Image' }],
                 },
             },
         }) as SamplePage_DocumentAreas;

@@ -23,6 +23,7 @@ export type SamplePage_MetaData = Array<{
 export type SamplePage_Body_MainPageHeroBlock = {
     __accessLevel?: number;
     heroTitle: { text: string };
+    heroImage: { image: ImageField };
 };
 /**
  * From Document Areas

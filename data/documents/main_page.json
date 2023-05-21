@@ -67,6 +67,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "89CGe44AYFQ76LG7v9eH5",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {}
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }

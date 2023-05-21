@@ -30,6 +30,7 @@ export class MainPageContentAdapter extends ContentAdapter<MainPageContent> {
             body: {
                 mainPageHeroBlock: {
                     heroTitle: [{ name: 'text', type: 'HeaderText' }],
+                    heroImage: [{ name: 'image', type: 'Image' }],
                 },
             },
         }) as MainPage_DocumentAreas;
