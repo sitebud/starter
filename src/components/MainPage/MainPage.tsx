@@ -1,6 +1,7 @@
 import React from 'react';
 import {useAdaptedContent} from '@/adapters';
 import {MainPageHead} from '@/components/MainPage/MainPageHead';
+import {MainNavigationArea} from '@/components/Site/MainNavigationArea';
 
 export function MainPage() {
     const {mainPageContent} = useAdaptedContent();
@@ -8,6 +9,9 @@ export function MainPage() {
         return (
             <>
                 <MainPageHead/>
+                <div className="w-full container">
+                    <MainNavigationArea />
+                </div>
                 <main className="w-full container">
                     {mainPageContent.documentAreas.body.map((bodyBlockContext, idx) => {
                         const {mainPageHeroBlock} = bodyBlockContext;

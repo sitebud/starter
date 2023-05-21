@@ -28,9 +28,14 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
                 },
             },
             body: {
-                mainPageHeroBlock: {
-                    heroTitle: [{ name: 'text', type: 'HeaderText' }],
-                    heroImage: [{ name: 'image', type: 'Image' }],
+                sampleBlock: {
+                    sampleComponent: [
+                        { name: 'heading', type: 'HeaderText' },
+                        { name: 'paragraph', type: 'ParagraphText' },
+                        { name: 'image', type: 'Image' },
+                        { name: 'documentsList', type: 'DocumentsList' },
+                        { name: 'stringValue', type: 'StringValue' },
+                    ],
                 },
             },
         }) as SamplePage_DocumentAreas;

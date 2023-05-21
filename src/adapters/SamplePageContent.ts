@@ -20,16 +20,21 @@ export type SamplePage_MetaData = Array<{
 /**
  * From SamplePage_Body
  */
-export type SamplePage_Body_MainPageHeroBlock = {
+export type SamplePage_Body_SampleBlock = {
     __accessLevel?: number;
-    heroTitle: { text: string };
-    heroImage: { image: ImageField };
+    sampleComponent: {
+        heading: string;
+        paragraph: string;
+        image: ImageField;
+        documentsList: DocumentsListField;
+        stringValue: string;
+    };
 };
 /**
  * From Document Areas
  */
 export type SamplePage_Body = Array<{
-    mainPageHeroBlock?: SamplePage_Body_MainPageHeroBlock;
+    sampleBlock?: SamplePage_Body_SampleBlock;
 }>;
 /**
  * Document Areas

@@ -19,7 +19,7 @@ export function MainPageHead() {
 
         let pageTitle: string = title;
         let twitterImageUrl = '';
-        for (const metaDataBlockContext of siteContent.documentAreas.metaData) {
+        for (const metaDataBlockContext of siteContent.documentAreas.mainNavigation) {
             if (metaDataBlockContext.siteLogoBlock) {
                 const {logoImage, logoTitle} = metaDataBlockContext.siteLogoBlock;
                 pageTitle = `${pageTitle} | ${logoTitle.text}`;

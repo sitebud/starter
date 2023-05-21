@@ -1,5 +1,5 @@
 import {DocumentConfig} from '@sitebud/sdk-lib';
-import {mainPageHeroBlock, basicSeoDataBlock} from '../blocks';
+import {basicSeoDataBlock, sampleBlock} from '../blocks';
 
 export const SamplePage: DocumentConfig = {
     type: 'page',
@@ -20,7 +20,7 @@ export const SamplePage: DocumentConfig = {
             indexNumber: 1,
             label: 'Body',
             blocks: {
-                mainPageHeroBlock,
+                sampleBlock
             }
         }
     }
