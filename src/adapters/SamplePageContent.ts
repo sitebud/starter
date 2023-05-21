@@ -27,6 +27,7 @@ export type SamplePage_Body_SampleBlock = {
         paragraph: string;
         image: ImageField;
         documentsList: DocumentsListField;
+        icon: string;
         stringValue: string;
     };
 };

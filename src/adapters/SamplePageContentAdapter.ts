@@ -34,6 +34,7 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
                         { name: 'paragraph', type: 'ParagraphText' },
                         { name: 'image', type: 'Image' },
                         { name: 'documentsList', type: 'DocumentsList' },
+                        { name: 'icon', type: 'Icon' },
                         { name: 'stringValue', type: 'StringValue' },
                     ],
                 },

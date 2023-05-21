@@ -14,7 +14,7 @@ export const mainPageHeroBlock: BlockConfig = {
                     indexNumber: 0,
                     type: 'HeaderText',
                     fieldContent: {
-                        htmlText: '<h1>Welcome to the starter template for SiteBud CMS</h1>'
+                        htmlText: '<h1>Welcome...</h1>'
                     }
                 }
             }

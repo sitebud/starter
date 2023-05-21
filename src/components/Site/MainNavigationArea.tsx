@@ -7,7 +7,7 @@ export function MainNavigationArea() {
     if (siteContent) {
         const {documentAreas: {mainNavigation}} = siteContent;
         return (
-            <section className="flex flex-row justify-between items-center py-3 border-b-[1px] border-gray-200">
+            <section className="w-full flex flex-row justify-between items-center py-3 border-b-[1px] border-gray-200">
                     {mainNavigation.map((mainNavigationBlockContent, idx) => {
                         const {siteLogoBlock, navigationMenuBlock} = mainNavigationBlockContent;
                         if (siteLogoBlock) {
@@ -33,8 +33,14 @@ export function MainNavigationArea() {
                                         const {mainPageContent, samplePageContent} = documentContext;
                                         if (mainPageContent || samplePageContent) {
                                             return (
-                                                <div key={`navItem_${contextIdx}`}>
-                                                    <Link href={mainPageContent?.path || samplePageContent?.path || '#'}>
+                                                <div
+                                                    key={`navItem_${contextIdx}`}
+                                                    className="px-3"
+                                                >
+                                                    <Link
+                                                        className="hover:underline"
+                                                        href={mainPageContent?.path || samplePageContent?.path || '#'}
+                                                    >
                                                         {mainPageContent?.title || samplePageContent?.title || '#'}
                                                     </Link>
                                                 </div>
@@ -45,9 +51,6 @@ export function MainNavigationArea() {
                             );
                         }
                     })}
-                <div className="grow flex flex-row justify-end">
-
-                </div>
             </section>
         );
     }

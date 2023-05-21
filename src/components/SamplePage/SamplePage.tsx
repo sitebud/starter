@@ -69,6 +69,11 @@ export function SamplePage() {
                                                 })}
                                             </div>
                                         </ComponentPropSection>
+                                        <ComponentPropSection label="Icon">
+                                            <div>
+                                                {sampleComponent.icon}
+                                            </div>
+                                        </ComponentPropSection>
                                         <ComponentPropSection label="String Value">
                                             <code className="p-3">
                                                 <pre>
