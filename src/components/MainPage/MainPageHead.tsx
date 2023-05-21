@@ -33,10 +33,8 @@ export function MainPageHead() {
                 <Head>
                     <meta name="description" content={metaDescription}/>
                     <meta name="robots" content={metaRobots}/>
-                    {/* Open Graph Data */}
                     <meta property="og:description" content={metaDescription}/>
                     <meta property="og:locale" content={locale}/>
-                    {/* Twitter summary card */}
                     <meta name="twitter:card" content="summary_large_image"/>
                     <meta name="twitter:title" content={pageTitle}/>
                     <meta name="twitter:description" content={metaDescription}/>
