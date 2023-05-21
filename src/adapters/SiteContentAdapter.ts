@@ -9,11 +9,11 @@ export class SiteContentAdapter extends ContentAdapter<SiteContent> {
             baseUrl: baseUrl || '',
             availableLocales: availableLocales || [],
             documentAreas: {
-                metaData: [],
+                mainNavigation: [],
             },
         };
         result.documentAreas = this.processDocumentAreas({
-            metaData: {
+            mainNavigation: {
                 siteLogoBlock: {
                     logoImage: [{ name: 'image', type: 'Image' }],
                     logoTitle: [{ name: 'text', type: 'StringValue' }],

@@ -9,6 +9,10 @@
       "isCustomSlug": true,
       "documentAreas": [
         {
+          "name": "mainNavigation",
+          "blocks": []
+        },
+        {
           "name": "metaData",
           "blocks": [
             {

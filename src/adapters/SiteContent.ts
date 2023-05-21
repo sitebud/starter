@@ -5,9 +5,9 @@ import {
     LinkField,
 } from './types';
 /**
- * From Site_MetaData
+ * From Site_MainNavigation
  */
-export type Site_MetaData_SiteLogoBlock = {
+export type Site_MainNavigation_SiteLogoBlock = {
     __accessLevel?: number;
     logoImage: { image: ImageField };
     logoTitle: { text: string };
@@ -15,14 +15,14 @@ export type Site_MetaData_SiteLogoBlock = {
 /**
  * From Document Areas
  */
-export type Site_MetaData = Array<{
-    siteLogoBlock?: Site_MetaData_SiteLogoBlock;
+export type Site_MainNavigation = Array<{
+    siteLogoBlock?: Site_MainNavigation_SiteLogoBlock;
 }>;
 /**
  * Document Areas
  */
 export type Site_DocumentAreas = {
-    metaData: Site_MetaData;
+    mainNavigation: Site_MainNavigation;
 };
 /**
  * Document Content
