@@ -30,7 +30,6 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
             body: {
                 sampleBlock: {
                     sampleComponent: [
-                        { name: 'heading', type: 'HeaderText' },
                         { name: 'paragraph', type: 'ParagraphText' },
                         { name: 'image', type: 'Image' },
                         { name: 'documentsList', type: 'DocumentsList' },

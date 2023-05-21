@@ -23,7 +23,6 @@ export type SamplePage_MetaData = Array<{
 export type SamplePage_Body_SampleBlock = {
     __accessLevel?: number;
     sampleComponent: {
-        heading: string;
         paragraph: string;
         image: ImageField;
         documentsList: DocumentsListField;
