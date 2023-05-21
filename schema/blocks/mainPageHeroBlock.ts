@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const mainPageHeroBlock: BlockConfig = {
     label: 'Hero Block',
     description: 'A sample of the hero block for main page',
-    imageName: 'block_mockup.webp',
+    imageName: 'hero_block.webp',
     components: {
         heroTitle: {
             label: 'Hero Title',

@@ -77,7 +77,7 @@
           "mainPageHeroBlock": {
             "label": "Hero Block",
             "description": "A sample of the hero block for main page",
-            "imageName": "block_mockup.webp",
+            "imageName": "hero_block.webp",
             "components": {
               "heroTitle": {
                 "label": "Hero Title",
@@ -177,7 +177,7 @@
           "mainPageHeroBlock": {
             "label": "Hero Block",
             "description": "A sample of the hero block for main page",
-            "imageName": "block_mockup.webp",
+            "imageName": "hero_block.webp",
             "components": {
               "heroTitle": {
                 "label": "Hero Title",
