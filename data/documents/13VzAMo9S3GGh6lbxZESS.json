@@ -62,6 +62,13 @@
                       "id": "vPW2vnlyDtCBqB5IO6Fz9",
                       "props": [
                         {
+                          "name": "heading",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Type some heading...</h1>"
+                          }
+                        },
+                        {
                           "name": "paragraph",
                           "type": "ParagraphText",
                           "fieldContent": {

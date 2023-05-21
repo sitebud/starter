@@ -20,7 +20,7 @@ export const SamplePage: DocumentConfig = {
             indexNumber: 1,
             label: 'Body',
             blocks: {
-                // sampleBlock
+                sampleBlock
             }
         }
     }

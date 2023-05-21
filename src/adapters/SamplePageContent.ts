@@ -18,9 +18,25 @@ export type SamplePage_MetaData = Array<{
     basicSeoDataBlock?: SamplePage_MetaData_BasicSeoDataBlock;
 }>;
 /**
+ * From SamplePage_Body
+ */
+export type SamplePage_Body_SampleBlock = {
+    __accessLevel?: number;
+    sampleComponent: {
+        heading: string;
+        paragraph: string;
+        image: ImageField;
+        documentsList: DocumentsListField;
+        icon: string;
+        stringValue: string;
+    };
+};
+/**
  * From Document Areas
  */
-export type SamplePage_Body = Array<{}>;
+export type SamplePage_Body = Array<{
+    sampleBlock?: SamplePage_Body_SampleBlock;
+}>;
 /**
  * Document Areas
  */
