@@ -22,13 +22,6 @@ export type SamplePage_MetaData = Array<{
  */
 export type SamplePage_Body_SampleBlock = {
     __accessLevel?: number;
-    sampleComponent: {
-        paragraph: string;
-        image: ImageField;
-        documentsList: DocumentsListField;
-        icon: string;
-        stringValue: string;
-    };
 };
 /**
  * From Document Areas

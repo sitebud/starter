@@ -28,15 +28,7 @@ export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> 
                 },
             },
             body: {
-                sampleBlock: {
-                    sampleComponent: [
-                        { name: 'paragraph', type: 'ParagraphText' },
-                        { name: 'image', type: 'Image' },
-                        { name: 'documentsList', type: 'DocumentsList' },
-                        { name: 'icon', type: 'Icon' },
-                        { name: 'stringValue', type: 'StringValue' },
-                    ],
-                },
+                sampleBlock: {},
             },
         }) as SamplePage_DocumentAreas;
         return result;
