@@ -6,21 +6,7 @@
     "en-US": {
       "title": "Site",
       "slug": "@site",
-      "statusMap": {},
       "isCustomSlug": true,
-      "tags": {},
-      "dataFields": [
-        {
-          "name": "siteTitle",
-          "value": "Starter",
-          "type": "string"
-        },
-        {
-          "name": "siteLogo",
-          "value": "/_assets/images/article-1.svg",
-          "type": "string"
-        }
-      ],
       "documentAreas": [
         {
           "name": "metaData",
