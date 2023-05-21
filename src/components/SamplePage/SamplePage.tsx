@@ -4,7 +4,6 @@ import {useAdaptedContent} from '@/adapters';
 import {MainPageHead} from '@/components/MainPage/MainPageHead';
 import {MainNavigationArea} from '@/components/Site/MainNavigationArea';
 import KeyIcon from '@/icons/key.svg';
-import {ReactComponent as TrashIcon} from '@/icons/trash.svg';
 import {IconEntry} from '@/icons/IconEntry';
 
 function ComponentPropSection(props: { label: string, children: React.ReactNode }) {
@@ -59,14 +58,18 @@ export function SamplePage() {
                                                     const {mainPageContent, samplePageContent} = documentContext;
                                                     if (mainPageContent) {
                                                         return (
-                                                            <div key={`mainPageContent_${idx}`} className="rounded-[6px] bg-blue-400 text-white p-2 mb-3">
-                                                                <Link className="hover:underline" href={mainPageContent?.path}>{mainPageContent?.title}</Link>
+                                                            <div key={`mainPageContent_${idx}`}
+                                                                 className="rounded-[6px] bg-blue-400 text-white p-2 mb-3">
+                                                                <Link className="hover:underline"
+                                                                      href={mainPageContent?.path}>{mainPageContent?.title}</Link>
                                                             </div>
                                                         );
                                                     } else if (samplePageContent) {
                                                         return (
-                                                            <div key={`samplePageContent_${idx}`} className="rounded-[6px] bg-blue-400 text-white p-2">
-                                                                <Link className="hover:underline" href={samplePageContent?.path}>{samplePageContent?.title}</Link>
+                                                            <div key={`samplePageContent_${idx}`}
+                                                                 className="rounded-[6px] bg-blue-400 text-white p-2 mb-3">
+                                                                <Link className="hover:underline"
+                                                                      href={samplePageContent?.path}>{samplePageContent?.title}</Link>
                                                             </div>
                                                         );
                                                     }
@@ -74,7 +77,7 @@ export function SamplePage() {
                                             </div>
                                         </ComponentPropSection>
                                         <ComponentPropSection label="Icon">
-                                            <IconEntry iconKey={sampleComponent.icon} className="h-12" />
+                                            <IconEntry iconKey={sampleComponent.icon} className="h-12"/>
                                         </ComponentPropSection>
                                         <ComponentPropSection label="String Value">
                                             <code className="p-3">

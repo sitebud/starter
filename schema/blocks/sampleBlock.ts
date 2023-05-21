@@ -35,7 +35,7 @@ export const sampleBlock: BlockConfig = {
                 documentsList: {
                     indexNumber: 3,
                     type: 'DocumentsList',
-                    label: 'Documents List',
+                    label: 'Documents List Property',
                     isRequired: true,
                     fieldContent: {
                         selectionMode: 'selectDocuments',
@@ -57,7 +57,7 @@ export const sampleBlock: BlockConfig = {
                 },
                 icon: {
                     indexNumber: 4,
-                    label: 'Icon',
+                    label: 'Icon Property',
                     type: 'Icon',
                     isRequired: true,
                     fieldContent: {
@@ -81,7 +81,7 @@ export const sampleBlock: BlockConfig = {
                 stringValue: {
                     indexNumber: 5,
                     type: 'StringValue',
-                    label: 'String Value',
+                    label: 'String Value Property',
                     isRequired: true,
                     fieldContent: {
                         value: 'Arbitrary string value'
