@@ -61,6 +61,7 @@ export const sampleBlock: BlockConfig = {
                 stringValue: {
                     indexNumber: 4,
                     type: 'StringValue',
+                    label: 'String Value',
                     fieldContent: {
                         value: 'Arbitrary string value',
                         isRequired: true
