@@ -14,9 +14,8 @@ export const siteLogoBlock: BlockConfig = {
                 image: {
                     indexNumber: 0,
                     type: 'Image',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
             }
         },
@@ -29,9 +28,8 @@ export const siteLogoBlock: BlockConfig = {
                 text: {
                     indexNumber: 0,
                     type: 'StringValue',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
             }
         }

@@ -12,9 +12,9 @@ export const navigationMenuBlock: BlockConfig = {
                 documentsList: {
                     indexNumber: 0,
                     type: 'DocumentsList',
+                    isRequired: true,
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        isRequired: true,
                     }
                 },
             }
