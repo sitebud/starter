@@ -1,10 +1,10 @@
 import { ContentAdapter } from '@sitebud/bridge-lib';
-import { MainPageContent, MainPage_DocumentAreas } from './types';
-export class MainPageContentAdapter extends ContentAdapter<MainPageContent> {
-    adapt(): MainPageContent {
+import { SamplePageContent, SamplePage_DocumentAreas } from './types';
+export class SamplePageContentAdapter extends ContentAdapter<SamplePageContent> {
+    adapt(): SamplePageContent {
         const { content, hasRestrictedAreas, baseUrl, path, locale } =
             this._documentData;
-        const result: MainPageContent = {
+        const result: SamplePageContent = {
             title: content?.title || 'undefined',
             slug: content?.slug || 'undefined',
             dateUpdated: content?.dateUpdated,
@@ -28,12 +28,18 @@ export class MainPageContentAdapter extends ContentAdapter<MainPageContent> {
                 },
             },
             body: {
-                mainPageHeroBlock: {
-                    heroTitle: [{ name: 'text', type: 'HeaderText' }],
-                    heroImage: [{ name: 'image', type: 'Image' }],
+                sampleBlock: {
+                    sampleComponent: [
+                        { name: 'heading', type: 'HeaderText' },
+                        { name: 'paragraph', type: 'ParagraphText' },
+                        { name: 'image', type: 'Image' },
+                        { name: 'documentsList', type: 'DocumentsList' },
+                        { name: 'icon', type: 'Icon' },
+                        { name: 'stringValue', type: 'StringValue' },
+                    ],
                 },
             },
-        }) as MainPage_DocumentAreas;
+        }) as SamplePage_DocumentAreas;
         return result;
     }
 }

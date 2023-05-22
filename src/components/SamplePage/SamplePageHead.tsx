@@ -2,14 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 import {useAdaptedContent} from '@/adapters';
 
-export function MainPageHead() {
-    const {mainPageContent, siteContent} = useAdaptedContent();
-    if (mainPageContent && siteContent) {
-        const {title, locale, baseUrl} = mainPageContent;
+export function SamplePageHead() {
+    const {samplePageContent, siteContent} = useAdaptedContent();
+    if (samplePageContent && siteContent) {
+        const {title, locale, baseUrl} = samplePageContent;
 
         let metaDescription = '';
         let metaRobots = 'noindex, nofollow';
-        for (const metaDataBlockContext of mainPageContent.documentAreas.metaData) {
+        for (const metaDataBlockContext of samplePageContent.documentAreas.metaData) {
             const {basicSeoDataBlock} = metaDataBlockContext;
             if (basicSeoDataBlock) {
                 metaDescription = basicSeoDataBlock.metaDataFields.description || metaDescription;
