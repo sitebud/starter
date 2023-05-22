@@ -2226,22 +2226,22 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sitebud/bridge-lib@1.0.0-alpha.13":
-  version "1.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.13.tgz#90215ed97c3216cefe36f4291735cfbd8e445190"
-  integrity sha512-Sk5E6c7gv94SPMBM/XGucBvn5qWflUkVkTac7qP6TUp02YTQLY7filSfjo5LsNWpdsIZH8jI0dMqUplksblygA==
+"@sitebud/bridge-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.14.tgz#61b16cf4277362752b3b6702396ca9230ec2bb8f"
+  integrity sha512-oWgnsC+tuz5Ei4eXzMOaxoCIi+AWMuZZ1WjfvOzXCDKnvvc+hwI/PGBvSLyOJOiu+ERxmvLtudE0LkWLgoPqWw==
   dependencies:
     idb "7.1.1"
 
-"@sitebud/domain-lib@1.0.0-alpha.13":
-  version "1.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.13.tgz#be0d2ecb95d6e9a72f7e9113c91d3493ad3db7b1"
-  integrity sha512-GTzyK/w0TeMNKVzonzCnwFJTjaYBMJ7TDZ7D4mxFz9m5Q3SbpMKuKqXRQy8p7TI7ouZcNfgBe7JgE+O2eZdk2A==
+"@sitebud/domain-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.14.tgz#08483443c020b913c9a1bbb4d509ceb5240341c4"
+  integrity sha512-wJnv+rE+vzMqpIv6hXg788RjMLbNSeUXLXVLtruIvTqlBEFtuuuH0L9TSs3U/yHQAx7S70CzQMYeo2zecGw6YA==
 
-"@sitebud/sdk-lib@1.0.0-alpha.13":
-  version "1.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.13.tgz#6aecf743abb904ec23e61aa466dede3cfb7cff58"
-  integrity sha512-aP5IOJv14ds5t25pyiRzDHzPq3CIA5ePlRLbNhHBBz1BBw6LJEMdzta2alK700JCU06smsBzHzEe7d6JfPot6w==
+"@sitebud/sdk-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.14.tgz#31c37cf10c463b5bdce254aeb4c59c29c9191830"
+  integrity sha512-HUMdc5WPNoidFJW6jNReobkFCKsNMw50LBY1X3yUS+p3i1fdN4wQfSyJvDf5FT3sFhylf/oSCVzyFzlt9uYobw==
   dependencies:
     "@rollup/plugin-commonjs" "24.0.0"
     "@rollup/plugin-node-resolve" "15.0.1"
