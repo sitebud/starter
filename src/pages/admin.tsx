@@ -3,8 +3,7 @@ import {NextPage, InferGetStaticPropsType} from 'next';
 import {useRouter} from 'next/router';
 import {AdminRedirectError} from '@sitebud/bridge-lib';
 
-// let siteBudCMSBaseURL: string = 'https://app.sitebudcms.com';
-let siteBudCMSBaseURL: string = 'http://localhost:3030';
+let siteBudCMSBaseURL: string = 'https://app.sitebudcms.com';
 
 const AdminPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({owner, repo, sbSecret}) => {
     const router = useRouter();
