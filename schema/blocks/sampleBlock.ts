@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const sampleBlock: BlockConfig = {
     label: 'Sample Block With Single Component',
     description: 'This block consists of a single component, encompassing all available properties in the CMS.',
-    imageName: 'sample_block.webpp',
+    imageName: 'sample_block.webp',
     components: {
         sampleComponent: {
             indexNumber: 0,
