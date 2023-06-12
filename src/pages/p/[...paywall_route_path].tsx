@@ -5,12 +5,11 @@ import type {NextPage, InferGetServerSidePropsType, GetServerSidePropsContext} f
 import {useRouter} from 'next/router';
 import Script from 'next/script';
 import {
-    DocumentData,
     PreviewDataProvider,
     RawDataProvider,
     fetchRawData,
     initExternalModules,
-    RequestOptions
+    RequestOptions, Data
 } from '@sitebud/bridge-lib';
 import {PageFacade} from '@/PageFacade';
 import NotFound from '../404';
@@ -25,11 +24,10 @@ export async function getServerSideProps({locale, params, preview}: GetServerSid
             };
             initExternalModules({fsExtra: fs, path});
             if (!preview) {
-                const {pageData, siteData} = await fetchRawData(requestOptions, locale, slug);
+                const data: Data = await fetchRawData(requestOptions, locale, slug);
                 return {
                     props: {
-                        pageData,
-                        siteData,
+                        data,
                         slug,
                         isPreview: false
                     },
@@ -41,8 +39,6 @@ export async function getServerSideProps({locale, params, preview}: GetServerSid
             }
             return {
                 props: {
-                    pageData: {} as DocumentData,
-                    siteData: {} as DocumentData,
                     slug,
                     isPreview: true,
                     accessLevel: requestOptions.accessLevel,
@@ -63,7 +59,7 @@ export async function getServerSideProps({locale, params, preview}: GetServerSid
 }
 
 const PaywallRoutePage: NextPage = (props: InferGetServerSidePropsType<typeof getServerSideProps> & { children?: React.ReactNode }) => {
-    const {pageData, siteData, slug, isPreview, accessLevel} = props;
+    const {data, slug, isPreview, accessLevel} = props;
     const {locale, defaultLocale} = useRouter();
     if (isPreview) {
         return (
@@ -80,8 +76,7 @@ const PaywallRoutePage: NextPage = (props: InferGetServerSidePropsType<typeof ge
     }
     return (
         <RawDataProvider
-            siteData={siteData}
-            pageData={pageData}
+            data={data}
             custom404={<NotFound/>}
         >
             <PageFacade />

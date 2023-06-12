@@ -4,8 +4,9 @@ import {MainPageHead} from '@/components/MainPage/MainPageHead';
 import {MainNavigationArea} from '@/components/Site/MainNavigationArea';
 
 export function MainPage() {
-    const {mainPageContent} = useAdaptedContent();
-    if (mainPageContent) {
+    const documentContentContext = useAdaptedContent();
+    if (documentContentContext?.mainPageContent) {
+        const {documentAreas} = documentContentContext?.mainPageContent;
         return (
             <>
                 <MainPageHead/>
@@ -13,7 +14,7 @@ export function MainPage() {
                     <MainNavigationArea />
                 </div>
                 <main className="w-full container">
-                    {mainPageContent.documentAreas.body.map((bodyBlockContext, idx) => {
+                    {documentAreas.body.map((bodyBlockContext, idx) => {
                         const {mainPageHeroBlock} = bodyBlockContext;
                         if (mainPageHeroBlock) {
                             const {heroImage, heroTitle} = mainPageHeroBlock;
