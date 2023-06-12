@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From MainPage_MetaData
  */
@@ -49,6 +44,5 @@ export type MainPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
     documentAreas: MainPage_DocumentAreas;
 };

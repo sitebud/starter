@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import {useAdaptedContent} from '@/adapters';
+import {useAdaptedContent, useDocumentsMap, getDocumentContentContextList} from '@/adapters';
 import {MainPageHead} from '@/components/MainPage/MainPageHead';
 import {MainNavigationArea} from '@/components/Site/MainNavigationArea';
-import KeyIcon from '@/icons/key.svg';
 import {IconEntry} from '@/icons/IconEntry';
 
 function ComponentPropSection(props: { label: string, children: React.ReactNode }) {
@@ -16,9 +15,10 @@ function ComponentPropSection(props: { label: string, children: React.ReactNode 
 }
 
 export function SamplePage() {
-    const {samplePageContent} = useAdaptedContent();
-    console.log('[KeyIcon]: ', KeyIcon);
-    if (samplePageContent) {
+    const documentContentContext = useAdaptedContent();
+    const documentsMap = useDocumentsMap();
+    if (documentContentContext?.samplePageContent) {
+        const {documentAreas} = documentContentContext?.samplePageContent;
         return (
             <>
                 <MainPageHead/>
@@ -26,7 +26,7 @@ export function SamplePage() {
                     <MainNavigationArea/>
                 </div>
                 <main className="w-full container">
-                    {samplePageContent.documentAreas.body.map((bodyBlockContext, idx) => {
+                    {documentAreas.body.map((bodyBlockContext, idx) => {
                         const {sampleBlock} = bodyBlockContext;
                         if (sampleBlock) {
                             const {sampleComponent} = sampleBlock;
@@ -54,7 +54,7 @@ export function SamplePage() {
                                         </ComponentPropSection>
                                         <ComponentPropSection label="Documents List">
                                             <div className="flex flex-col items-start">
-                                                {sampleComponent.documentsList.entries?.map((documentContext, idx) => {
+                                                {getDocumentContentContextList(documentsMap, sampleComponent.documentsList).map((documentContext, idx) => {
                                                     const {mainPageContent, samplePageContent} = documentContext;
                                                     if (mainPageContent) {
                                                         return (

@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From SamplePage_MetaData
  */
@@ -55,6 +50,5 @@ export type SamplePageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
     documentAreas: SamplePage_DocumentAreas;
 };
